@@ -67,7 +67,7 @@ public class ConsoleView
         LimpiarPantalla();
         string[] columnas = { "Patente", "Vehículo", "Tipo", "Cap. Carga", "Km/l", "Año", "L.Extra", "Kms a recorrer" };
         DibujarEncabezado(columnas);
-        DibjuarDatos(columnas.Length);
+        DibujarDatos(columnas.Length);
         DibujarLinea();
         Console.Write("\n");
         Console.Write("\n");
@@ -102,7 +102,7 @@ public class ConsoleView
         Console.Write("\n");
         DibujarLinea();
     }
-    private static void DibjuarDatos(int columnas)
+    private static void DibujarDatos(int columnas)
     {
         int ancho = Console.WindowWidth / columnas;
         foreach (var vehiculo in _vehiculos)
